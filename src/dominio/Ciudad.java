@@ -23,6 +23,10 @@ public class Ciudad {
 
 	}
 
+	public void setCodigoPostal(Integer codigoPostal) {
+		this.codigoPostal = codigoPostal;
+	}
+
 	public int getCodigoPostal() {
 		return codigoPostal;
 	}

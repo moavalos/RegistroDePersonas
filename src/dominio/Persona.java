@@ -9,12 +9,14 @@ public class Persona {
 	private Provincia provincia;
 
 	// COMPOSISION. realmente no lo usaria aca, es mas provincia si o si tiene una ciudad y viceversa. persona tambien pero agregacion me parece lo mejor
-//	public Persona(String nombre, String apellido, Direccion direccion) {
-//		this.nombre = nombre;
-//		this.apellido = apellido;
-//		this.direccion = direccion;
-//	}
-//
+	public Persona(String nombre, String apellido, Direccion direccion,Ciudad ciudad, Provincia provincia) {
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.direccion = direccion;
+		this.ciudad = ciudad;
+		this.provincia = provincia;
+	}
+
 	public Persona(String nombre, String apellido, String direccion, String ciudad, String provincia) {
 		this.nombre = nombre;
 		this.apellido = apellido;
