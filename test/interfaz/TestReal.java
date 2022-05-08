@@ -38,9 +38,6 @@ public class TestReal {
 	@Test                                                                                                                                      
 	public void verificarQueSePuedaObtenerElListadoDePersonasDeUnaProvincia() {
 		// preparacion
-		Provincia buenosAires = new Provincia("Buenos Aires");
-		Ciudad cordobaCapital = new Ciudad(1334, "Cordoba Capital", "Cordoba");
-		Direccion direccion = new Direccion("pedraza", 544, cordobaCapital);
 		
 		Persona pablo = new Persona("Pablo", "Perez", direccion, cordobaCapital, buenosAires);
 		Persona juan = new Persona("juan", "carballo2", direccion, cordobaCapital, buenosAires);

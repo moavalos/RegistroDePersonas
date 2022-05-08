@@ -7,6 +7,10 @@ public class Provincia {
 		this.nombre = nombre;
 	}
 
+	public Provincia() {
+
+	}
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}

@@ -4,20 +4,25 @@ public class Ciudad {
 	private Integer codigoPostal;
 	private String nombre;
 	private Provincia provincia;
-	
+
 	// composicion
 	// conviene mas en este caso
 	public Ciudad(Integer codigoPostal, String nombre, String provincia) {
 		this.codigoPostal = codigoPostal;
 		this.nombre = nombre;
-		this.provincia = new Provincia(provincia);
+		this.provincia = new Provincia();
 	}
+
 	public Ciudad(Integer codigoPostal, String nombre, Provincia provincia) {
 		this.codigoPostal = codigoPostal;
 		this.nombre = nombre;
 		this.provincia = provincia;
 	}
-	
+
+	public Ciudad() {
+
+	}
+
 	public int getCodigoPostal() {
 		return codigoPostal;
 	}

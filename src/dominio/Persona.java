@@ -6,26 +6,21 @@ public class Persona {
 	private Direccion direccion;
 	private Persona persona;
 	private Ciudad ciudad;
-	private Integer cp;
-	private String calle;
-	private Integer numero;
 	private Provincia provincia;
-	private String nombreCiudad;
-	private String nombreProvincia;
 
-	// AGREGACION
+	// COMPOSISION. realmente no lo usaria aca, es mas provincia si o si tiene una ciudad y viceversa. persona tambien pero agregacion me parece lo mejor
 //	public Persona(String nombre, String apellido, Direccion direccion) {
 //		this.nombre = nombre;
 //		this.apellido = apellido;
 //		this.direccion = direccion;
 //	}
 //
-	public Persona(String nombre, String apellido, Direccion direccion, Ciudad ciudad, Provincia provincia ) {
+	public Persona(String nombre, String apellido, String direccion, String ciudad, String provincia) {
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.direccion = new Direccion(this.calle, this.numero, ciudad);
-		this.ciudad = new Ciudad(this.cp, this.nombreCiudad, provincia);
-		this.provincia = new Provincia(this.nombreProvincia);
+		this.direccion = new Direccion();
+		this.ciudad = new Ciudad();
+		this.provincia = new Provincia();
 		
 	}
 

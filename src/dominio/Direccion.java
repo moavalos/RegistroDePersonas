@@ -1,16 +1,25 @@
 package dominio;
 
-
 public class Direccion {
 
 	private String calle;
-	private int numero;
+	private Integer numero;
 	private Ciudad ciudad;
 
-	public Direccion(String calle, int numero, Ciudad ciudad) {
+	public Direccion(String calle, Integer numero, Ciudad ciudad) {
 		this.calle = calle;
 		this.numero = numero;
 		this.ciudad = ciudad;
+	}
+
+	public Direccion(String calle, Integer numero, String ciudad) {
+		this.calle = calle;
+		this.numero = numero;
+		this.ciudad = new Ciudad();
+	}
+
+	public Direccion() {
+
 	}
 
 	public String getCalle() {
@@ -21,11 +30,11 @@ public class Direccion {
 		this.calle = calle;
 	}
 
-	public int getNumero() {
+	public Integer getNumero() {
 		return numero;
 	}
 
-	public void setNumero(int numero) {
+	public void setNumero(Integer numero) {
 		this.numero = numero;
 	}
 
@@ -40,5 +49,5 @@ public class Direccion {
 	public String toString() {
 		return "Direccion [calle=" + calle + ", numero=" + numero + ", ciudad=" + ciudad + "]";
 	}
-	
+
 }
