@@ -20,14 +20,6 @@ public class Persona {
 //		this.direccion = direccion;
 //	}
 //
-//	// COMPOSICION
-//	public Persona(String nombre, String apellido, Direccion direccion, Persona persona) {
-//		this.nombre = nombre;
-//		this.apellido = apellido;
-//		this.direccion = direccion;
-//		this.persona = new Persona(apellido, apellido, direccion);
-//	}
-
 	public Persona(String nombre, String apellido, Direccion direccion, Ciudad ciudad, Provincia provincia ) {
 		this.nombre = nombre;
 		this.apellido = apellido;

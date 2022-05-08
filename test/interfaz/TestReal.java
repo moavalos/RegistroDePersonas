@@ -17,6 +17,9 @@ public class TestReal {
 
 	@Test
 	public void queSePuedaInstanciarUnaCiudad() {
+		
+		// ESTO ANDA
+		
 		String PROVINCIA_ESPERADA = "Cordoba";
 		String PROVINCIA_ESPERADA_2 = "Buenos Aires";
 		
@@ -34,7 +37,6 @@ public class TestReal {
 	
 	@Test                                                                                                                                      
 	public void verificarQueSePuedaObtenerElListadoDePersonasDeUnaProvincia() {
-		
 		// preparacion
 		Provincia buenosAires = new Provincia("Buenos Aires");
 		Ciudad cordobaCapital = new Ciudad(1334, "Cordoba Capital", "Cordoba");
@@ -63,7 +65,5 @@ public class TestReal {
 		assertEquals(NOMBRRE_ESPERADO, personasEnLaProvincia[1].getCiudad().getProvincia().getNombre());
 		assertEquals(NOMBRRE_ESPERADO, personasEnLaProvincia[2].getCiudad().getProvincia().getNombre());
 		assertEquals(CANTIDAD_DE_REGISTROS, personasEnLaProvincia.length);
-
-		
 	}
 }

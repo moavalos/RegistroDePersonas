@@ -6,6 +6,7 @@ public class Ciudad {
 	private Provincia provincia;
 	
 	// composicion
+	// conviene mas en este caso
 	public Ciudad(Integer codigoPostal, String nombre, String provincia) {
 		this.codigoPostal = codigoPostal;
 		this.nombre = nombre;
@@ -16,10 +17,7 @@ public class Ciudad {
 		this.nombre = nombre;
 		this.provincia = provincia;
 	}
-
-	public Ciudad(String ciudad) {
-		// TODO Auto-generated constructor stub
-	}
+	
 	public int getCodigoPostal() {
 		return codigoPostal;
 	}
